@@ -1,3 +1,7 @@
 [submodule ".config/nvim-sub"]
 	path = .config/nvim-sub
 	url = https://github.com/Maxxxxxx-x/nvim
+[submodule "/home/maxx/.config/nvim"]
+	path = /home/maxx/.config/nvim
+	url = https://github.com/Maxxxxxx-x/nvim
+	branch = wsl

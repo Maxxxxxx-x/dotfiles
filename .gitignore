@@ -7,7 +7,7 @@
 .vim/
 .gnupg/
 ./oh-my-zsh/
-.bash*/
+.bash*
 .git-credentials
 .hushlogin
 .node_*
