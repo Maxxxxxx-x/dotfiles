@@ -124,3 +124,9 @@ export NVM_DIR="$HOME/.nvm"
 alias vi="nvim"
 alias vim="nvim"
 alias nano="nvim"
+
+
+# zoxide
+
+eval "$(zoxide init zsh --cmd cd)"
+
