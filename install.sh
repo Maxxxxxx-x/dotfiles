@@ -2,7 +2,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install nala
 
-sudo nala install bison bsdmainutils binutils gcc make build-essential libreadline-dev unzip -y
+sudo nala install bison bsdmainutils binutils gcc make build-essential libreadline-dev unzip stow -y
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -62,10 +62,8 @@ sudo nala install expat libxml2-dev  pkg-config libasound2-dev libssl-dev cmake 
 
 cargo install silicon
 
-sudo nala install stow bat fastfetch
+sudo nala install bat fastfetch
 
-git clone https://github.com/Maxxxxxx-x/dotfiles
-stow .
 
 wget https://github.com/UpliftGames/wally/releases/download/v0.3.2/wally-v0.3.2-linux.zip
 unzip wally-v0.3.2-linux.zip
