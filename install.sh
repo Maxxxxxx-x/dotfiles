@@ -2,7 +2,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install nala
 
-sudo nala install bison bsdmainutils binutils gcc make build-essential libreadline-dev unzip stow -y
+sudo nala install bison bsdmainutils binutils gcc make build-essential libreadline-dev unzip -y
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -60,9 +60,10 @@ sudo nala install fzf
 
 sudo nala install expat libxml2-dev  pkg-config libasound2-dev libssl-dev cmake libfreetype6-dev libexpat1-dev libxcb-composite0-dev libharfbuzz-dev libfontconfig1-dev g++
 
-cargo install silicon
+sudo nala install bat fastfetch ripgrep
 
-sudo nala install bat fastfetch
+
+cargo install silicon
 
 
 wget https://github.com/UpliftGames/wally/releases/download/v0.3.2/wally-v0.3.2-linux.zip
@@ -77,8 +78,6 @@ cargo install --branch main --git https://github.com/Kampfkarren/selene selene
 
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
-sudo nala install ripgrep
-
 wget https://github.com/jqlang/jq/releases/download/jq-1.8.2/jq-linux-amd64
 chmod +x ./jq-linux-amd64
 mv jq-linux-amd64 jq
@@ -86,3 +85,5 @@ sudo mv jq /usr/local/bin
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
