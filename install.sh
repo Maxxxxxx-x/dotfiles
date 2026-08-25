@@ -107,3 +107,5 @@ EOF
 
 sudo nala update
 sudo nala install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
