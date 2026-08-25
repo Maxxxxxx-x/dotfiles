@@ -3,3 +3,5 @@
 	email = maxx@verypro.wtf
 [credential]
 	helper = option
+[core]
+	editor = nvim
