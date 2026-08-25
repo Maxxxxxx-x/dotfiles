@@ -127,6 +127,7 @@ export NVM_DIR="$HOME/.nvm"
 # nvim
 alias vi="nvim"
 alias vim="nvim"
+alias rvim="nvim"
 alias nano="nvim"
 
 alias bat="batcat"
