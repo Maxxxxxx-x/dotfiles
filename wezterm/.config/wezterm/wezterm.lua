@@ -1,0 +1,1 @@
+/mnt/c/Users/maxx/.config/wezterm/wezterm.lua
