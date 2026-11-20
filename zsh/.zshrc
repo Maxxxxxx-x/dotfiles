@@ -114,6 +114,8 @@ source $ZSH/oh-my-zsh.sh
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+[[ -s "/home/maxx/.gvm/scripts/gvm" ]] && source "/home/maxx/.gvm/scripts/gvm"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -133,4 +135,10 @@ alias reload_zsh="source ~/.zshrc"
 eval "$(zoxide init zsh --cmd cd)"
 
 
-[[ -s "/home/maxx/.gvm/scripts/gvm" ]] && source "/home/maxx/.gvm/scripts/gvm"
+[[ -s "/Users/maxx/.gvm/scripts/gvm" ]] && source "/Users/maxx/.gvm/scripts/gvm"
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
