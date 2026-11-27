@@ -127,10 +127,21 @@ alias nano="nvim"
 alias bat="batcat"
 
 alias reload_zsh="source ~/.zshrc"
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+    alias open="explorer.exe"
+fi
+
 
 # zoxide
 
 eval "$(zoxide init zsh --cmd cd)"
 
-
 [[ -s "/home/maxx/.gvm/scripts/gvm" ]] && source "/home/maxx/.gvm/scripts/gvm"
+
+export PATH="$HOME/dotnet:$PATH"
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
